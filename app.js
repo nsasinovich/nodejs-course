@@ -1,7 +1,5 @@
-'use strict';
-
-const Config = require('./config');
-const { User, Product } = require('./models');
+import Config from './config';
+import { User, Product } from './models';
 
 console.log(`App name: ${Config.name}`);
 

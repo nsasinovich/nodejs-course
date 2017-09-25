@@ -1,7 +1,5 @@
-'use strict';
-
-const User = require('./user');
-const Product = require('./product');
+import User from './user';
+import Product from './product';
 
 module.exports = {
     User,
