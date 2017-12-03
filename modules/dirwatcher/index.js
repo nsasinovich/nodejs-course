@@ -6,11 +6,11 @@ import { DirWatcherEvents } from './DirWatcher.Constants';
 function dirChangeListener(delay) {
     let listenerPauseTimeout = null;
 
-    return function(eventType, filename) {
+    return function(eventType, fileName) {
         if(!listenerPauseTimeout) {
             listenerPauseTimeout = setTimeout(() => {
                 if(eventType === 'change') {
-                    DirWatcherEventEmitter.emit(DirWatcherEvents.CHANGED);
+                    DirWatcherEventEmitter.emit(DirWatcherEvents.CHANGED, fileName);
                 }
 
                 listenerPauseTimeout = null;
