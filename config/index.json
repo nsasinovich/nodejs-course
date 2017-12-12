@@ -1,3 +1,5 @@
 {
-    "name": "NodeMP HW App"
+    "name": "NodeMP HW App",
+    "pathToDirectory": "data",
+    "delay": "5000"
 }
